@@ -1,0 +1,9 @@
+.ComponentExample4 {
+  background-color: yellow;
+  background-image: url("./empty.png");
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  &__heading {
+    background-color: lightgrey;
+  }
+}
