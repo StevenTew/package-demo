@@ -1,22 +1,16 @@
 {
   "name": "package-demo",
   "version": "0.0.1",
-  "description": "",
+  "description": "Magpie's UI Library. For React component development and creation of multiple UI package. Plus Storybook.",
   "scripts": {
-    "refreshVSToken": "vsts-npm-auth -config .npmrc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./scripts/build.js",
     "build-storybook": "build-storybook -s ./public",
-    "dist:clean": "rimraf ./dist",
-    "start": "start-storybook -s ./public -p 6006",
-    "storybook": "start-storybook -s ./public -p 6006"
+    "refreshVSToken": "vsts-npm-auth -config .npmrc",
+    "start": "start-storybook -s -p 6006",
+    "storybook": "start-storybook -s -p 6006",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "dist/components/index.js",
-  "keywords": [],
   "author": "Magpie Front-end Team",
-  "files": [
-    "dist"
-  ],
+
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

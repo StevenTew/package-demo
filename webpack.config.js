@@ -22,12 +22,12 @@ module.exports = {
   //   // lodash: {
   //   //   commonjs: 'lodash',
   //   //   commonjs2: 'lodash',
-  //   //   amd: 'lodash',npm
+  //   //   amd: 'lodash',
   //   //   root: '_',
   //   // },
   // },
   plugins: [
-    // Generate an external css file with a hash in the filename
+    // Generate an external css file
     new MiniCssExtractPlugin({
       filename: "styles.css",
     }),
@@ -45,14 +45,14 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
-          // {
-          //   loader: "postcss-loader",
-          //   options: {
-          //     postcssOptions: {
-          //       plugins: ["autoprefixer"],
-          //     },
-          //   },
-          // },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: ["autoprefixer"],
+              },
+            },
+          },
           "sass-loader",
         ],
       },
