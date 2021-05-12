@@ -13,12 +13,9 @@ export const parameters = {
       order: [
         'Introduction',
         'Design System',
-        ['Introduction', 'Atoms', 'Molecules', 'Organisms', 'Templates', 'Pages'],
+        ['Introduction', 'Atoms', 'Molecules', 'Organisms', 'Templates'],
         'Example Pages',
         ['Home', 'Search', 'Product', 'Basket', 'Checkout', 'Confirmation'],
-        'JDE Example',
-        'Legacy Store',
-        'New Store',
         'Draft'
       ],
     }
