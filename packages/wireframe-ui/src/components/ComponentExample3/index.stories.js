@@ -1,7 +1,7 @@
 import { ComponentExample3 } from "./index.js";
 
 export default {
-  title: "Design System/Wireframe-UI/ComponentExample3",
+  title: "Wireframe-UI/ComponentExample3",
   component: ComponentExample3,
 };
 

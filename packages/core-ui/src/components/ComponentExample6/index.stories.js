@@ -1,7 +1,7 @@
 import { ComponentExample6 } from "./index.js";
 
 export default {
-  title: "Design System/Core-UI/ComponentExample6",
+  title: "Core-UI/ComponentExample6",
   component: ComponentExample6,
 };
 
