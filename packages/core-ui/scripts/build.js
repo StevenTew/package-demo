@@ -1,24 +1,20 @@
-import { execSync } from "child_process";
-import path, { resolve } from 'path';
-
-import packageConfig from "./package.config";
-
-console.log(packageConfig);
-console.log(path.resolve(__dirname))
+const { execSync } = require('child_process');
+const { resolve } = require('path');
 
 const root = resolve(__dirname, '..');
 const run = (cmd) => execSync(cmd, { stdio: 'inherit', cwd: root });
 
-run(`npm run dist:clean`)
+run(`npm run dist:clean`);
 // Run a Webpack build to generate JS and styles
 run(`webpack`);
 
 // Use Babel to make a CJS version of component js files available
-run(`babel components --out-dir dist/cjs/components`);
-run(`copyfiles -e ./**/*.js ./components/**/*.* ./dist/cjs`);
+run(`babel src --out-dir dist/cjs/  --ignore src/**/*.test.js`);
+// add the non js files to CJS folder too
+run(`copyfiles -e ./**/*.js ./src/components/**/*.* ./dist/cjs --up=1`);
 
 // Copy sass files that make up our public API into the styles folder
-run(`copyfiles ./styles/**/*.scss ./dist`);
+run(`copyfiles ./src/styles/**/*.scss ./dist  --up=1`);
 
 // Copy sass files that make up our components into the comp-styles folder
 // run(`copyfiles ./components/**/*.scss ./dist/comp-styles --up=1`);

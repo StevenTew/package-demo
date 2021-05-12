@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import './ComponentExample4.scss';
 import image from './empty.svg';
 
-const ComponentExample4 = (options) => {
+const ComponentExample4 = () => {
   return (
     <div className="ComponentExample4">
       <h2 className="ComponentExample4__heading">ComponentExample4</h2>
-      <img src={image} />
+      <img src={image} alt="" />
     </div>
   );
 };

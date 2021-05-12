@@ -1,0 +1,12 @@
+// widths
+$small: 20rem;
+$medium: 40rem; 
+$large: 64rem;
+$xlarge: 75rem;
+$max: 90rem;
+
+@mixin minwidth($query) {
+    @media screen and (min-width: + $query) {
+        @content; 
+    }
+}

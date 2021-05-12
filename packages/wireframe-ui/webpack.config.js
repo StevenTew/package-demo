@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    index: "./components/index.js",
+    index: "./src/index.js",
     // core/coreui: "./packages/core-ui/src/components/index.js",
     // wireframe/wireframeui: "./packages/wireframe-ui/src/components/index.js"
   },
