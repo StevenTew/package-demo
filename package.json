@@ -3,14 +3,20 @@
   "version": "0.0.1",
   "description": "Magpie's UI Library. For React component development and creation of multiple UI package. Plus Storybook.",
   "scripts": {
+    "storybook": "start-storybook -s -p 6006",
+    "bootstrap": "lerna bootstrap",
+    "postinstall": "npm run bootstrap",
+    "build": "lerna run build --parallel",
+    "prestart": "npm install && npm run build",
+    "start": "npm run storybook",
+    "build:watch": "npm run build -- --watch",
     "build-storybook": "build-storybook -s ./public",
     "refreshVSToken": "vsts-npm-auth -config .npmrc",
-    "start": "start-storybook -s -p 6006",
-    "storybook": "start-storybook -s -p 6006",
+    "publish-packages": "lerna publish",
+    "prepublish-packages": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Magpie Front-end Team",
-
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -45,6 +51,7 @@
     "html-webpack-plugin": "^5.2.0",
     "lerna": "^4.0.0",
     "mini-css-extract-plugin": "^1.6.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.2.7",
     "postcss-loader": "^5.2.0",
     "rimraf": "^3.0.2",
