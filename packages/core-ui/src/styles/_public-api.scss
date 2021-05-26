@@ -1,8 +1,8 @@
-// This file is Magpie's public Sass API.
+// This file is our public Sass API.
 // Consuming applications may import this file if they wish to use our helper functions
 //
 // Import from a scss file:
-// `@use '~@magpie/core-ui/dist/styles/public-api';`
+// `@use '~@steventew/core-ui/dist/styles/public-api';`
 
 @use './values/colours';
 @use './values/fonts';

@@ -1,7 +1,7 @@
 {
   "name": "package-demo",
   "version": "0.0.1",
-  "description": "Magpie's UI Library. For React component development and creation of multiple UI package. Plus Storybook.",
+  "description": "UI Library. Developing React UI components and building out to multiple UI packages. Plus documentation.",
   "scripts": {
     "storybook": "start-storybook -s -p 6006",
     "bootstrap": "lerna bootstrap",
@@ -16,7 +16,7 @@
     "prepublish-packages": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Magpie Front-end Team",
+  "author": "Steven Tew",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
