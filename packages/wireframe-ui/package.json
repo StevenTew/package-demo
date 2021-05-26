@@ -8,7 +8,7 @@
     "build": "node ./scripts/build.js",
     "dist:clean": "rimraf ./dist"
   },
-  "main": "dist/components/index.js",
+  "main": "dist/cjs/index.js",
   "keywords": [],
   "author": "Steven Tew",
   "files": [

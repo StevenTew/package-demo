@@ -16,7 +16,7 @@ module.exports = {
     },
     clean: true,
   },
-  mode: "development",
+  mode: "production",
   // devtool: "source-map",
   // externals: {
   //   // lodash: {
