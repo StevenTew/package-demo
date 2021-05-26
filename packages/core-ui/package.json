@@ -1,6 +1,6 @@
 {
   "name": "@steventew/core-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core UI: React components for faster and simpler web development, built to our design system.",
   "private": false,
   "scripts": {
