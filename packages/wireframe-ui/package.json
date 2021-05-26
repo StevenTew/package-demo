@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "Steven Tew",
   "files": [
-    "./dist"
+    "dist"
   ],
   "peerDependencies": {
     "prop-types": "^15.7.2",
