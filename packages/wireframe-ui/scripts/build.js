@@ -9,9 +9,9 @@ run(`npm run dist:clean`);
 run(`webpack`);
 
 // Use Babel to make a CJS version of component js files available
-run(`babel src --out-dir dist/cjs/  --ignore src/**/*.test.js`);
+// run(`babel src --out-dir dist/cjs/  --ignore src/**/*.test.js`);
 // add the non js files to CJS folder too
-run(`copyfiles -e ./**/*.js ./src/components/**/*.* ./dist/cjs --up=1`);
+// run(`copyfiles -e ./**/*.js ./src/components/**/*.* ./dist/cjs --up=1`);
 
 // Copy sass files that make up our public API into the styles folder
 // run(`copyfiles ./src/styles/**/*.scss ./dist  --up=1`);
