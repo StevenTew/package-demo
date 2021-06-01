@@ -1,6 +1,6 @@
 {
   "name": "@steventew/wireframe-ui",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Wireframe UI: React components for faster and simpler web development, built to a generic appearance.",
   "private": false,
   "scripts": {
