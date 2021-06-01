@@ -70,12 +70,12 @@ module.exports = {
       root: "PropTypes"
     }
   },
-  plugins: [
-    // Generate an external css file with a hash in the filename
-    new MiniCssExtractPlugin({
-      filename: "styles.css",
-    }),
-  ],
+  // plugins: [
+  //   // Generate an external css file with a hash in the filename
+  //   new MiniCssExtractPlugin({
+  //     filename: "styles.css",
+  //   }),
+  // ],
   module: {
     rules: [jsRules, styleRules, imgRules],
   },
