@@ -1,5 +1,5 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const jsRules = {
   // see also .babelrc
@@ -16,7 +16,7 @@ const styleRules = {
   test: /\.s?css$/i,
   exclude: /node_modules/,
   use: [
-    MiniCssExtractPlugin.loader,
+    "style-loader",
     "css-loader",
     // {
     //   loader: "postcss-loader",
