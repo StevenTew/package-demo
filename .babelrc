@@ -1,6 +1,4 @@
-// {
-//     "presets": ["@babel/preset-env", "@babel/preset-react"],
-// }
+//note: This file is used by Storybook (it overrides Storybook's default babel settings)
 {
   "presets": [
     "@babel/preset-env",
