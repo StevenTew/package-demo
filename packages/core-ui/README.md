@@ -1,1 +1,1 @@
-# core-ui
+# ui-core

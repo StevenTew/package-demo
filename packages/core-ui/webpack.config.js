@@ -4,8 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: {
     index: "./src/index.js",
-    // core/coreui: "./packages/core-ui/src/components/index.js",
-    // wireframe/wireframeui: "./packages/wireframe-ui/src/components/index.js"
+    // core/coreui: "./packages/ui-core/src/components/index.js",
+    // wireframe/wireframeui: "./packages/ui-wireframe/src/components/index.js"
   },
   output: {
     filename: "[name].js",

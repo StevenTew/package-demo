@@ -11,12 +11,14 @@ export const parameters = {
     storySort: {
       method: 'alphabetical',
       order: [
-        'Introduction',
-        'Design System',
-        ['Introduction', 'Atoms', 'Molecules', 'Organisms', 'Templates'],
+        'Docs',
+        ['Introduction'],
+        'core-ui',
+        'wireframe-ui',
+        'Draft',
+        'Deprecated',
         'Example Pages',
         ['Home', 'Search', 'Product', 'Basket', 'Checkout', 'Confirmation'],
-        'Draft'
       ],
     }
   }

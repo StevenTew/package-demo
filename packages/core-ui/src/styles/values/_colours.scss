@@ -1,19 +1,36 @@
-$primary: #41acff;
-$lightbggrey: #f4f4f4;
-$lightblue: #d9f3fd;
-$darkgrey: #2f2f3b;
-$lightgrey: #989898;
-$warmgrey: #414059;
-$darkblue: #00537e;
-$lightblue: #D9F3FD;
-$red: #f66;
-$green: #009a01;
-$darkgreen: #008a00;
+// brand primary colours
+$primary-green: #009a01;
+$primary-green-ro: #008801;
+$primary-blue: #00537e;
+$primary-blue-ro: #004264;
+
+// brand secondary colours
 $blue: #41acff;
+$blue-ro: #0190ff;
+$warmgrey: #414059;
+$warmgrey-ro: #05050a;
+$red: #f66;
+$black: #000;
+$lightblue: #d9f3fd;
 $yellow: #fec123;
-$error: #dc3545;
-$rental: #53C999;
 $white: #ffffff;
+$lightbggrey: #f4f4f4;
+$rental: #53C999;
+
+// not listed in brand guidelines
+$rental-ro: darken($rental, 15%);
+$darkgrey: #2f2f3b;
+$lightgrey: #131212;
+
+// functional
+$success: $primary-green;
+$error: $red;
+
+// deprecated variable names
+$primary: $blue;
+$green: $primary-green;
+$darkgreen: $primary-green-ro;
+$darkblue: $primary-blue;
 
 /*
 CSS var dump

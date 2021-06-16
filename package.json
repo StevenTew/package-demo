@@ -1,7 +1,7 @@
 {
   "name": "package-demo",
   "version": "0.0.2",
-  "description": "UI Library. Developing React UI components and building out to multiple UI packages. Plus documentation.",
+  "description": "UI Lab. For developing React UI components andpublishing to multiple UI packages. Plus documentation.",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "bootstrap": "lerna bootstrap",
@@ -20,11 +20,12 @@
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "tiny-slider": "^2.9.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.0",
-    "@babel/core": "^7.13.8",
+    "@babel/core": "^7.14.6",
     "@babel/plugin-transform-runtime": "^7.13.15",
     "@babel/preset-env": "^7.13.9",
     "@babel/preset-react": "^7.12.13",
@@ -57,8 +58,6 @@
     "rimraf": "^3.0.2",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
-    "storybook-addon-designs": "^5.4.5",
-    "webpack": "^5.24.3",
-    "webpack-cli": "^4.7.0"
+    "storybook-addon-designs": "^6.0.0"
   }
 }
